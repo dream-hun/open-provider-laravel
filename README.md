@@ -7,7 +7,7 @@ A Laravel package for integrating with the OpenProvider API.
 You can install the package via composer:
 
 ```bash
-composer require yourusername/laravel-openprovider
+composer require jacktalkc/laravel-openprovider
 ```
 
 ## Configuration
@@ -45,11 +45,6 @@ $domains = OpenProvider::searchDomains([
 $info = OpenProvider::getDomainInfo('example.com');
 ```
 
-## Testing
-
-```bash
-composer test
-```
 ## Testing
 
 ```bash
