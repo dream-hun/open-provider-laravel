@@ -3,6 +3,7 @@
   "description": "Laravel integration for OpenProvider API",
   "type": "library",
   "license": "MIT",
+  "version": "1.0.0",
   "autoload": {
     "psr-4": {
       "jacktalkc\\LaravelOpenProvider\\": "src/"
