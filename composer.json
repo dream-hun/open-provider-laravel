@@ -1,0 +1,48 @@
+{
+  "name": "jacktalkc/laravel-openprovider",
+  "description": "Laravel integration for OpenProvider API",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "jacktalkc\\LaravelOpenProvider\\": "src/"
+    },
+    "classmap": [
+      "src/SDK"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "jacktalkc\\LaravelOpenProvider\\Tests\\": "tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jacques MBABAZI",
+      "email": "mbabazijacques@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "illuminate/support": "*",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-libxml": "*",
+    "ext-iconv": "*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0|^7.0|^8.0",
+    "phpunit/phpunit": "^9.0|^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "jacktalkc\\LaravelOpenProvider\\OpenProviderServiceProvider"
+      ],
+      "aliases": {
+        "OpenProvider": "jacktalkc\\LaravelOpenProvider\\Facades\\OpenProvider"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
